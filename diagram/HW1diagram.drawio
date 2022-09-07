@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-07T04:50:05.571Z" agent="5.0 (Macintosh)" etag="2OUMPz1BwouSZ-pUxQJW" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-07T05:05:36.877Z" agent="5.0 (Macintosh)" etag="atj9lZB8z7tYexOW83PG" version="20.2.8" type="github">
   <diagram id="xMZvqUQl98MtYuGiwL1R" name="Page-1">
-    <mxGraphModel dx="681" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
+    <mxGraphModel dx="961" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -178,6 +178,12 @@
         <mxCell id="Zlc17w75IkvPci_HZcoX-237" value="California State University" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="650" y="180" width="160" height="86" as="geometry" />
         </mxCell>
+        <mxCell id="Zlc17w75IkvPci_HZcoX-264" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="Zlc17w75IkvPci_HZcoX-237" target="Zlc17w75IkvPci_HZcoX-236">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="80" as="sourcePoint" />
+            <mxPoint x="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Zlc17w75IkvPci_HZcoX-238" value="College: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zlc17w75IkvPci_HZcoX-237">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
@@ -188,7 +194,19 @@
           <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="Zlc17w75IkvPci_HZcoX-241" value="Student" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="650" y="290" width="160" height="120" as="geometry" />
+          <mxGeometry x="580" y="390" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Zlc17w75IkvPci_HZcoX-259" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.273;entryY=1.026;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Zlc17w75IkvPci_HZcoX-241" target="Zlc17w75IkvPci_HZcoX-258">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" as="sourcePoint" />
+            <mxPoint x="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zlc17w75IkvPci_HZcoX-262" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="Zlc17w75IkvPci_HZcoX-241" target="Zlc17w75IkvPci_HZcoX-237">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="40" as="sourcePoint" />
+            <mxPoint x="200" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Zlc17w75IkvPci_HZcoX-250" value="ID: Int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zlc17w75IkvPci_HZcoX-241">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
@@ -202,11 +220,23 @@
         <mxCell id="Zlc17w75IkvPci_HZcoX-243" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Zlc17w75IkvPci_HZcoX-241">
           <mxGeometry y="86" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Zlc17w75IkvPci_HZcoX-244" value="Units: Int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zlc17w75IkvPci_HZcoX-241">
+        <mxCell id="Zlc17w75IkvPci_HZcoX-244" value="Grade: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zlc17w75IkvPci_HZcoX-241">
           <mxGeometry y="94" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="Zlc17w75IkvPci_HZcoX-245" value="Staff" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="830" y="290" width="160" height="120" as="geometry" />
+          <mxGeometry x="1000" y="400" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Zlc17w75IkvPci_HZcoX-260" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.756;entryY=1.026;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Zlc17w75IkvPci_HZcoX-245" target="Zlc17w75IkvPci_HZcoX-258">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="80" as="sourcePoint" />
+            <mxPoint x="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zlc17w75IkvPci_HZcoX-263" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.619;entryY=1.051;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Zlc17w75IkvPci_HZcoX-245" target="Zlc17w75IkvPci_HZcoX-240">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="10" as="sourcePoint" />
+            <mxPoint x="170" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Zlc17w75IkvPci_HZcoX-246" value="ID: Int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zlc17w75IkvPci_HZcoX-245">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
@@ -223,17 +253,50 @@
         <mxCell id="Zlc17w75IkvPci_HZcoX-251" value="Position: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zlc17w75IkvPci_HZcoX-245">
           <mxGeometry y="94" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="Zlc17w75IkvPci_HZcoX-255" value="Classname" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="650" y="436" width="160" height="86" as="geometry" />
+        <mxCell id="Zlc17w75IkvPci_HZcoX-255" value="Class" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="990" y="170" width="160" height="86" as="geometry" />
         </mxCell>
-        <mxCell id="Zlc17w75IkvPci_HZcoX-256" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zlc17w75IkvPci_HZcoX-255">
+        <mxCell id="Zlc17w75IkvPci_HZcoX-256" value="Title: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zlc17w75IkvPci_HZcoX-255">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="Zlc17w75IkvPci_HZcoX-257" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Zlc17w75IkvPci_HZcoX-255">
           <mxGeometry y="52" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Zlc17w75IkvPci_HZcoX-258" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zlc17w75IkvPci_HZcoX-255">
+        <mxCell id="Zlc17w75IkvPci_HZcoX-258" value="Unit: Int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zlc17w75IkvPci_HZcoX-255">
           <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Zlc17w75IkvPci_HZcoX-261" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.465;exitY=-0.016;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.015;entryY=0.124;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Zlc17w75IkvPci_HZcoX-255" target="Zlc17w75IkvPci_HZcoX-237">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="870" y="270" as="sourcePoint" />
+            <mxPoint x="1030" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zlc17w75IkvPci_HZcoX-265" value="Schedule" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="780" y="530" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Zlc17w75IkvPci_HZcoX-269" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="Zlc17w75IkvPci_HZcoX-265" target="Zlc17w75IkvPci_HZcoX-241">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="50" as="sourcePoint" />
+            <mxPoint x="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zlc17w75IkvPci_HZcoX-266" value="Time: Int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zlc17w75IkvPci_HZcoX-265">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Zlc17w75IkvPci_HZcoX-267" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Zlc17w75IkvPci_HZcoX-265">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zlc17w75IkvPci_HZcoX-270" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="Zlc17w75IkvPci_HZcoX-265" target="Zlc17w75IkvPci_HZcoX-245">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="900" y="540" as="sourcePoint" />
+            <mxPoint x="1060" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zlc17w75IkvPci_HZcoX-271" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="Zlc17w75IkvPci_HZcoX-255" target="Zlc17w75IkvPci_HZcoX-265">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="850" y="440" as="sourcePoint" />
+            <mxPoint x="1000" y="520" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
