@@ -1,0 +1,18 @@
+SELECT assy.number AS "Assembly Number", assy.name AS "Assembly Name",
+       comp.number AS "Component Number", comp.name AS "Component Name"
+FROM part_usage pu INNER JOIN part assy ON pu.assembly_parts_number = assy.number
+     RIGHT_OUTER_JOIN part comp ON pu.sub_assembly_parts = comp.number
+ORDER BY 1, 3;
+
+'''db
+SELECT p1.number AS "1 number", p1.name AS "1 name",
+       p2.number AS "2 number", p2.name AS "2 name"
+FROM part_usages pu1 INNER JOIN part_usages pu2 USING (assembly_parts_number)
+     INNER JOIN parts p1 ON (pu1.sub_assembly_parts.number) = p1.number
+     INNER JOIN parts p2 ON pu2.sub_assembly_parts.number = p2.number
+WHERE pu1.sub_assembly_parts.number < pu2.sub_assembly_parts.number
+ORDER BY p1.name, p2.name;
+
+'''db
+SELECT
+FROM 
