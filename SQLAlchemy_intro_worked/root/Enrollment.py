@@ -3,7 +3,7 @@ from sqlalchemy.orm import relationship
 from orm_base import Base
 
 
-class Enrollment():
+class Enrollment(Base):
     __tablename__ = 'Enrollment'
     studentID = Column(String, ForeignKey('Student.studentID'), primary_key=True)
     sectionID = Column(Integer, ForeignKey('Section.sectionID'), primary_key=True)
@@ -21,6 +21,3 @@ class Enrollment():
 
     def __str__(self):
         return f"{self.student} {self.section}"
-
-    def add_sectionToStudent(self, section):
-        self.section.append(section)

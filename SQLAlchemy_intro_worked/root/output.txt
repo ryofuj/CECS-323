@@ -1,0 +1,32 @@
+2022-11-07 11:47:41,096 INFO sqlalchemy.engine.Engine
+CREATE TABLE "SQLAlchemy_intro"."Student" (
+	"studentID" VARCHAR NOT NULL,
+	"firstName" VARCHAR,
+	"lastName" VARCHAR,
+	PRIMARY KEY ("studentID")
+)
+
+
+2022-11-07 11:47:41,096 INFO sqlalchemy.engine.Engine [no key 0.00006s] {}
+2022-11-07 11:47:41,100 INFO sqlalchemy.engine.Engine
+CREATE TABLE "SQLAlchemy_intro"."Enrollment" (
+	"studentID" VARCHAR NOT NULL,
+	"sectionID" INTEGER NOT NULL,
+	PRIMARY KEY ("studentID", "sectionID"),
+	FOREIGN KEY("studentID") REFERENCES "SQLAlchemy_intro"."Student" ("studentID"),
+	FOREIGN KEY("sectionID") REFERENCES "SQLAlchemy_intro"."Section" ("sectionID")
+)
+
+
+2022-11-07 11:47:41,100 INFO sqlalchemy.engine.Engine [no key 0.00005s] {}
+2022-11-07 11:47:41,106 INFO sqlalchemy.engine.Engine COMMIT
+John Doe None
+Inside the session, woo hoo.
+2022-11-07 11:47:41,111 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2022-11-07 11:47:41,112 INFO sqlalchemy.engine.Engine INSERT INTO "SQLAlchemy_intro"."Section" ("departmentName", "courseName", "sectionNumber", semester, year) VALUES (%(departmentName)s, %(courseName)s, %(sectionNumber)s, %(semester)s, %(year)s) RETURNING "SQLAlchemy_intro"."Section"."sectionID"
+2022-11-07 11:47:41,112 INFO sqlalchemy.engine.Engine [generated in 0.00007s] ({'departmentName': 'CECS', 'courseName': '101', 'sectionNumber': 1, 'semester': 'Fall', 'year': 2022}, {'departmentName': 'CECS', 'courseName': '101', 'sectionNumber': 2, 'semester': 'Fall', 'year': 2022})
+2022-11-07 11:47:41,115 INFO sqlalchemy.engine.Engine INSERT INTO "SQLAlchemy_intro"."Student" ("firstName", "lastName") VALUES (%(firstName)s, %(lastName)s)
+2022-11-07 11:47:41,115 INFO sqlalchemy.engine.Engine [generated in 0.00008s] ({'firstName': 'John', 'lastName': 'Doe'}, {'firstName': 'Jane', 'lastName': 'Doe'})
+2022-11-07 11:47:41,116 INFO sqlalchemy.engine.Engine ROLLBACK
+
+Process finished with exit code 1

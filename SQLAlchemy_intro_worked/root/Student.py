@@ -3,7 +3,7 @@ from sqlalchemy.orm import relationship
 from orm_base import Base
 from Enrollment import Enrollment
 
-class Student():
+class Student(Base):
     __tablename__ = 'Student'
     studentID = Column(String, primary_key=True)
     firstName = Column(String)
@@ -15,13 +15,8 @@ class Student():
     def __init__(self, firstName, lastName):
         self.firstName = firstName
         self.lastName = lastName
-        self.section_list = []
-
-    def add_Student(self, student):
-        self.section_list.append(student)
-
-    def del_student(self, student):
-        self.section_list.remove(student)
-
+        self.enrollments = []
+    def add_section(self, section):
+        self.section_list.append(section)
     def __str__(self):
         return f"{self.firstName} {self.lastName} {self.studentID}"

@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fa33c89-e42d-455c-ae3a-9450cec53ac8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../SQLAlchemy Intro Start/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SQLAlchemy Intro Start/db_connection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SQLAlchemy Intro Start/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SQLAlchemy Intro Start/orm_base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/root/Enrollment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/root/Section.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/root/Student.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/root/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/root/db_connection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/root/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/root/orm_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/root/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/Enrollment.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/Enrollment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/Section.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/Section.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/Student.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/Student.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

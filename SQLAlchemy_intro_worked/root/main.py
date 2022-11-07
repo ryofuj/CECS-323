@@ -20,7 +20,6 @@ from orm_base import metadata
 import logging
 from Section import Section
 from Student import Student
-from Enrollment import Enrollment
 
 
 if __name__ == '__main__':
@@ -43,6 +42,7 @@ if __name__ == '__main__':
 
     t1: Student = Student("John", "Doe")
     t2: Student = Student("Jane", "Doe")
+    print(t1)
 
     # Do our database work within a context.  This makes sure that the session gets closed
     # at the end of the with, much like what it would be like if you used a with to open a file.
@@ -55,14 +55,8 @@ if __name__ == '__main__':
         sess.add(t1)
         sess.add(t2)
         sess.commit()
-        t1.add_SectionToStudent(s1)
-        t2.add_SectionToStudent(s2)
+        t1.add_section(s1)
+        t2.add_section(s2)
         sess.commit()
-        print("Done with the session, bye bye.")
-
-
-
-
-
-        # Now we're going to create a section and enroll a student in it.
-    print("Exiting normally.")
+        for section in sess.query(Section):
+            print(section)

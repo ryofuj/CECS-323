@@ -3,7 +3,7 @@ from sqlalchemy.orm import relationship
 from orm_base import Base
 from Enrollment import Enrollment
 
-class Section():
+class Section(Base):
     __tablename__ = 'Section'
     sectionID = Column(Integer, primary_key=True)
     departmentName = Column(String)
